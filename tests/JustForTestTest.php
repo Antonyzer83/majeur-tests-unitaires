@@ -21,5 +21,7 @@ class JustForTestTest extends KernelTestCase
         $this->assertEquals('same', $justForTest->testAssertEquals());
         $this->assertArrayHasKey('foo', $justForTest->testAssertArrayHasKey());
         $this->assertInstanceOf(User::class, $justForTest->testInstanceOf());
+        $this->assertJsonStringEqualsJsonString(json_encode(["message" => "ok"]), $justForTest->testAssertJsonStringEqualsJsonString());
+        $this->assertLessThan(1001, $justForTest->testAssertLessThan());
     }
 }

@@ -39,7 +39,7 @@ class CalculatorTest extends KernelTestCase
         self::bootKernel();
         $container = static::getContainer();
         $calculatorService = $container->get(CalculatorService::class);
-        $result  = $calculatorService->square(3, 4);
+        $result  = $calculatorService->multiplication(3, 4);
         $this->assertEquals(12, $result);
     }
 
@@ -57,7 +57,7 @@ class CalculatorTest extends KernelTestCase
         self::bootKernel();
         $container = static::getContainer();
         $calculatorService = $container->get(CalculatorService::class);
-        $result  = $calculatorService->racineCarre(9);
+        $result  = $calculatorService->square(9);
         $this->assertEquals(3, $result);
     }
 }

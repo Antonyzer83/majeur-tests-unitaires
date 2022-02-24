@@ -1,13 +1,14 @@
-<?php 
+<?php
+
 namespace App\Service;
 
 class CalculatorService
 {
-    public function addition($value1, $value2)
-    {
-        return $value1 + $value2;
-    }
-	
+	public function addition($value1, $value2)
+	{
+		return $value1 + $value2;
+	}
+
 	public function substraction($value1, $value2)
 	{
 		return $value1 - $value2;
@@ -17,19 +18,19 @@ class CalculatorService
 	{
 		return $value1 / $value2;
 	}
-	
-	public function square($value1, $value2)
+
+	public function square($value)
 	{
-		return $value1 * $value2;
+		return sqrt($value);
 	}
-	
+
 	public function modulo($value1, $value2)
 	{
 		return $value1 % $value2;
 	}
-	
-	public function racineCarre($value)
+
+	public function multiplication($value1, $value2)
 	{
-		return sqrt($value);
+		return $value1 * $value2;
 	}
 }

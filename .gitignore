@@ -27,3 +27,4 @@ yarn-error.log
 ###< phpunit/phpunit ###
 out/
 symfony.exe
+*.bak

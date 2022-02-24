@@ -13,6 +13,6 @@ class CalculateControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
         $this->assertSelectorTextContains('h1', 'calculatrice');
         $this->assertPageTitleSame('Hello CalculateController!');
-        $this->assertCount(16, $crawler->filter('div.touch'));
+        $this->assertCount(17, $crawler->filter('div.touch'));
     }
 }
